@@ -9,7 +9,7 @@ export default function Weather(){
       <h1>"Hello from Weather"</h1>
       <InfinitySpin
         width='200'
-        color="#4fa94d"
+        color="white"
       />
     </div>
   )
