@@ -2,17 +2,17 @@
 import './App.css';
 import Weather from './Weather';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World!
-        </p>
-        <Weather city= "Cologne"/>
-      </header>
+      <h1>Weather App</h1>
+      <footer>
+        This project was coded by {" "}
+        <a href="https://www.linkedin.com/in/andria-c/" target="_blank" rel="noreferrer"> Andria
+        </a> and is {" "}
+        <a href="https://github.com/andria-coder/weather-react" target="_blank" rel="noreferrer">open-sourced on GitHub.</a>
+      </footer>
+
     </div>
   );
 }
-
-export default App;
