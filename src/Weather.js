@@ -1,25 +1,31 @@
 import React from "react";
-import axios from "axios";
-import { InfinitySpin } from 'react-loader-spinner'
-;
-export default function Weather(props){
-  function handleResponse(response){
-    alert(`The weather in ${response.data.name} is ${response.data.main.temp}C`
-  );
-}
-let apiKey= "0d206f601e5e6e86a658ffd9322e991a";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
+import "./Weather.css";
 
-axios.get(apiUrl).then(handleResponse);
-
-
-  return (
+export default function Weather(){
+  return(
     <div className="Weather">
-      <h1>"Hello from Weather"</h1>
-      <InfinitySpin
-        width='200'
-        color="white"
-      />
+       <h1>Cologne</h1>
+       <ul>
+          <li>Wednesday 07:00</li>
+          <li>Sunny</li>
+       </ul>
+       <div className="row">
+          <div className="col-6">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="sunny" />
+            20°C
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>
+                Precipitation: 5%
+              </li>
+              <li>Humidity 60%</li>
+              <li>Wind: 13 km/h</li>
+            </ul>
+          </div>
+       </div>
+
     </div>
+
   )
 }
