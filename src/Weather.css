@@ -23,7 +23,7 @@
 }
 
 
-.Weather img{
+.Weather canvas {
   padding-right: 20px;
   padding-top: 20px;
   display:inline-block;
@@ -39,6 +39,6 @@
 
 .Weather .unit {
   position:relative;
-  top: -5px;
+  top: -35px;
 
 }
