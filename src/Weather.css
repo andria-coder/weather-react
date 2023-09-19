@@ -42,3 +42,12 @@
   top: -35px;
 
 }
+
+.WeatherTemperature a {
+  text-decoration: none;
+
+}
+
+.WeatherTemperature {
+  display: inline;
+}
